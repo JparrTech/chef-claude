@@ -4,7 +4,9 @@ import ClaudeRecipe from "../components/ClaudeRecipe"
 import { getRecipeFromChefClaude } from '../../ai'
 
 export default function Main() {
-    const [ingredients, setIngredients] = React.useState([])
+    const [ingredients, setIngredients] = React.useState([
+        "Tomato", "Basil" , "Oranges", "Cheese", "Bread"
+    ])
     const [recipe, setRecipe] = React.useState("")
 
 
@@ -15,8 +17,10 @@ export default function Main() {
             setIngredients(prevIngredients => [...prevIngredients, newIngredient])
         }
     }
-    function getRecipe() {
-        setRecipe(() => getRecipeFromChefClaude(ingredients)) // Prompt claude with API call
+    async function getRecipe() {
+        // Prompt claude with API call
+        setRecipe(await getRecipeFromChefClaude(ingredients))
+
     }
 
 

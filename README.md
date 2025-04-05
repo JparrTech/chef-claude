@@ -1,6 +1,5 @@
 # Chef Claude
 Chef Claude is a dynamic web app that takes ingredients from the user and generates recipes - powered by the ClaudeAPI. 
-This website will soon be hosted on jparrtech.com
  
  ## Professional Growth:
  * Built controlled forms to capture and manage user input
