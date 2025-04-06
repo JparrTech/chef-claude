@@ -8,6 +8,7 @@ Chef Claude is a dynamic web app that takes ingredients from the user and genera
  * Learned methods of communicating state between components:
     - Why to avoid using derived local state in components and solely handle states in parent components.
  * Learned how to render content dynamically based on user specific criteria (conditional rendering).
+ * Use of the React Markdown package to automatically render the response from Claude as markdown instead of plaintext. 
  
-![View of the website](image.png)
+<video controls src="chef-claude-demo.mp4" title="Demo"></video>
 
