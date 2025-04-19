@@ -10,5 +10,7 @@ Chef Claude is a dynamic web app powered by ClaudeAPI that takes ingredients fro
  * Learned how to render content dynamically based on user-specific criteria (conditional rendering).
  * Use of the React Markdown package to automatically render the response from Claude as markdown instead of plaintext. 
  
-<video controls src="chef-claude-demo.mp4" title="Demo"></video>
+
+https://github.com/user-attachments/assets/cdb3795b-bc72-40c9-858e-d2c3207a8130
+
 
