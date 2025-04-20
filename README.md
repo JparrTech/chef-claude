@@ -12,6 +12,9 @@ Chef Claude is a dynamic web app powered by ClaudeAPI that takes ingredients fro
  * Used useRef and useEffect React hooks to automatically scroll to the recipe section once the Claude API response loads in.  
  
 
-https://github.com/user-attachments/assets/cdb3795b-bc72-40c9-858e-d2c3207a8130
+
+https://github.com/user-attachments/assets/99b70119-43ce-465e-8768-8a2119f0d278
+
+
 
 
