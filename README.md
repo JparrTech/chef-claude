@@ -9,7 +9,7 @@ Chef Claude is a dynamic web app powered by ClaudeAPI that takes ingredients fro
     - Why to avoid using derived local state in components and solely handle states in parent components.
  * Learned how to render content dynamically based on user-specific criteria (conditional rendering).
  * Use of the React Markdown package to automatically render the response from Claude as markdown instead of plaintext. 
- * Used the useRef and useEffect React hooks to automatically scroll to the recipe section once the Claude API responds. 
+ * Used useRef and useEffect React hooks to automatically scroll to the recipe section once the Claude API response loads in.  
  
 
 https://github.com/user-attachments/assets/cdb3795b-bc72-40c9-858e-d2c3207a8130
