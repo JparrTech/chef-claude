@@ -5,10 +5,16 @@ import { getRecipeFromChefClaude } from '../../ai'
 
 export default function Main() {
     const [ingredients, setIngredients] = React.useState([
-        "Tomato", "Basil" , "Oranges", "Cheese", "Bread"
+        "Tomato", "Basil", "Oranges", "Cheese", "Bread"
     ])
     const [recipe, setRecipe] = React.useState("")
+    const recipeSection = React.useRef(null)
 
+    React.useEffect(() => {
+        if (recipe !== "" && recipeSection !== null) {
+            recipeSection.current.scrollIntoView()
+        }
+    }, [recipe])
 
     function addIngredient(formData) {
         const newIngredient = formData.get("ingredient")
@@ -39,12 +45,13 @@ export default function Main() {
             </form>
             {ingredients.length > 0 ?
                 <IngredientsList
+                    ref={recipeSection}
                     ingredients={ingredients}
                     getRecipe={getRecipe}
                 />
                 : null}
             {/* Claude recipe markdown is rendered when recipe state is populated */}
-            {recipe != "" ? <ClaudeRecipe recipe = {recipe} /> : null}  
+            {recipe != "" ? <ClaudeRecipe recipe={recipe} /> : null}
 
         </main>
     )
